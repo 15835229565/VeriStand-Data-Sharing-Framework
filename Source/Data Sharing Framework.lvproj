@@ -12,25 +12,22 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
-			<Item Name="Implementations" Type="Folder">
-				<Item Name="Framework Runtime.lvclass" Type="LVClass" URL="../Framework Runtime/Framework Runtime.lvclass"/>
-				<Item Name="Plugin Runtime.lvclass" Type="LVClass" URL="../Plugin Runtime/Plugin Runtime.lvclass"/>
-				<Item Name="Plugin Runtime.UDP.lvclass" Type="LVClass" URL="../Plugin Runtime.UDP/Plugin Runtime.UDP.lvclass"/>
+			<Item Name="Plugins" Type="Folder">
+				<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
 			</Item>
-			<Item Name="Framework.lvclass" Type="LVClass" URL="../Framework/Framework.lvclass"/>
-			<Item Name="Plugin.lvclass" Type="LVClass" URL="../Plugin/Plugin.lvclass"/>
-			<Item Name="Simulated VeriStand Engine.lvclass" Type="LVClass" URL="../Simulated VeriStand Engine/Simulated VeriStand Engine.lvclass"/>
+			<Item Name="Configuration.Channel.lvclass" Type="LVClass" URL="../Classes/Configuration.Channel/Configuration.Channel.lvclass"/>
+			<Item Name="Configuration.Transfer.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer/Configuration.Transfer.lvclass"/>
+			<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../Classes/Plugin Model/Plugin Configuration.lvclass"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
-			<Item Name="Framework Plugin Runtime Test.vi" Type="VI" URL="../Tests/Framework Plugin Runtime Test.vi"/>
+			<Item Name="Framework Plugin Configuration Test.vi" Type="VI" URL="../Tests/Framework Plugin Configuration Test.vi"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
-			<Item Name="Buffer Configuration.ctl" Type="VI" URL="../Typdefs/Buffer Configuration.ctl"/>
-			<Item Name="Channel Configuration.ctl" Type="VI" URL="../Typdefs/Channel Configuration.ctl"/>
-			<Item Name="Command FIFO Ref.ctl" Type="VI" URL="../Typdefs/Command FIFO Ref.ctl"/>
-			<Item Name="Decimation Factors.ctl" Type="VI" URL="../Typdefs/Decimation Factors.ctl"/>
-			<Item Name="Plugin Commands.ctl" Type="VI" URL="../Typdefs/Plugin Commands.ctl"/>
-			<Item Name="Plugin FIFO Data.ctl" Type="VI" URL="../Typdefs/Plugin FIFO Data.ctl"/>
+			<Item Name="Buffer Configuration.ctl" Type="VI" URL="../Typedefs/Buffer Configuration.ctl"/>
+			<Item Name="Channel Configuration.ctl" Type="VI" URL="../Typedefs/Channel Configuration.ctl"/>
+			<Item Name="Command FIFO Ref.ctl" Type="VI" URL="../Typedefs/Command FIFO Ref.ctl"/>
+			<Item Name="Decimation Factors.ctl" Type="VI" URL="../Typedefs/Decimation Factors.ctl"/>
+			<Item Name="Plugin FIFO Data.ctl" Type="VI" URL="../Typedefs/Plugin FIFO Data.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -38,12 +35,13 @@
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 				<Item Name="VeriStand Data.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/VeriStand Data/VeriStand Data.lvlib"/>
 			</Item>
+			<Item Name="Plugin Commands.ctl" Type="VI" URL="../Typedefs/Plugin Commands.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">10.1.130.58</Property>
+		<Property Name="alias.value" Type="Str">10.1.128.127</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,PharLap;CPU,x86;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
