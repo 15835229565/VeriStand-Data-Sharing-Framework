@@ -11,13 +11,25 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Classes" Type="Folder">
-			<Item Name="Plugins" Type="Folder">
-				<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
+		<Item Name="APIs" Type="Folder">
+			<Item Name="Runtime" Type="Folder">
+				<Item Name="Data Sharing Framework Runtime API.lvlib" Type="Library" URL="../APIs/Runtime/Data Sharing Framework Runtime API.lvlib"/>
 			</Item>
-			<Item Name="Configuration.Channel.lvclass" Type="LVClass" URL="../Classes/Configuration.Channel/Configuration.Channel.lvclass"/>
-			<Item Name="Configuration.Transfer.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer/Configuration.Transfer.lvclass"/>
-			<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../Classes/Plugin Model/Plugin Configuration.lvclass"/>
+		</Item>
+		<Item Name="Classes" Type="Folder">
+			<Item Name="Configuration" Type="Folder">
+				<Item Name="Plugins" Type="Folder">
+					<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
+				</Item>
+				<Item Name="Configuration.Channel.lvclass" Type="LVClass" URL="../Classes/Configuration.Channel/Configuration.Channel.lvclass"/>
+				<Item Name="Configuration.Transfer Group.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer Group/Configuration.Transfer Group.lvclass"/>
+				<Item Name="Configuration.Transfer.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer/Configuration.Transfer.lvclass"/>
+				<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../Classes/Plugin Model/Plugin Configuration.lvclass"/>
+			</Item>
+			<Item Name="Runtime" Type="Folder">
+				<Item Name="Runtime.Channel.lvclass" Type="LVClass" URL="../Classes/Runtime/Channel/Runtime.Channel.lvclass"/>
+				<Item Name="Runtime.Transfer.lvclass" Type="LVClass" URL="../Classes/Runtime/Transfer/Runtime.Transfer.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Framework Plugin Configuration Test.vi" Type="VI" URL="../Tests/Framework Plugin Configuration Test.vi"/>
