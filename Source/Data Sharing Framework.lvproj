@@ -11,43 +11,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="APIs" Type="Folder">
-			<Item Name="Runtime" Type="Folder">
-				<Item Name="Data Sharing Framework Runtime API.lvlib" Type="Library" URL="../APIs/Runtime/Data Sharing Framework Runtime API.lvlib"/>
-			</Item>
-		</Item>
-		<Item Name="Classes" Type="Folder">
-			<Item Name="Configuration" Type="Folder">
-				<Item Name="Plugins" Type="Folder">
-					<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
-				</Item>
-				<Item Name="Configuration.Channel.lvclass" Type="LVClass" URL="../Classes/Configuration.Channel/Configuration.Channel.lvclass"/>
-				<Item Name="Configuration.Transfer Group.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer Group/Configuration.Transfer Group.lvclass"/>
-				<Item Name="Configuration.Transfer.lvclass" Type="LVClass" URL="../Classes/Configuration.Transfer/Configuration.Transfer.lvclass"/>
-				<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../Classes/Plugin Model/Plugin Configuration.lvclass"/>
-			</Item>
-			<Item Name="Runtime" Type="Folder">
-				<Item Name="Runtime.Channel.lvclass" Type="LVClass" URL="../Classes/Runtime/Channel/Runtime.Channel.lvclass"/>
-				<Item Name="Runtime.Transfer.lvclass" Type="LVClass" URL="../Classes/Runtime/Transfer/Runtime.Transfer.lvclass"/>
-			</Item>
-		</Item>
 		<Item Name="Tests" Type="Folder">
+			<Item Name="Plugins" Type="Folder">
+				<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
+			</Item>
 			<Item Name="Framework Plugin Configuration Test.vi" Type="VI" URL="../Tests/Framework Plugin Configuration Test.vi"/>
 		</Item>
-		<Item Name="Typedefs" Type="Folder">
-			<Item Name="Buffer Configuration.ctl" Type="VI" URL="../Typedefs/Buffer Configuration.ctl"/>
-			<Item Name="Channel Configuration.ctl" Type="VI" URL="../Typedefs/Channel Configuration.ctl"/>
-			<Item Name="Command FIFO Ref.ctl" Type="VI" URL="../Typedefs/Command FIFO Ref.ctl"/>
-			<Item Name="Decimation Factors.ctl" Type="VI" URL="../Typedefs/Decimation Factors.ctl"/>
-			<Item Name="Plugin FIFO Data.ctl" Type="VI" URL="../Typedefs/Plugin FIFO Data.ctl"/>
-		</Item>
+		<Item Name="Data Sharing Framework.Configuration.lvlib" Type="Library" URL="../Data Sharing Framework.Configuration.lvlib"/>
+		<Item Name="Data Sharing Framework.Runtime.lvlib" Type="Library" URL="../APIs/Runtime/Data Sharing Framework.Runtime.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 				<Item Name="VeriStand Data.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/VeriStand Data/VeriStand Data.lvlib"/>
 			</Item>
-			<Item Name="Plugin Commands.ctl" Type="VI" URL="../Typedefs/Plugin Commands.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
