@@ -29,5 +29,5 @@
 	<Item Name="Typedefs" Type="Folder">
 		<Item Name="Block Descriptor.ctl" Type="VI" URL="../../../Typedefs/Block Descriptor.ctl"/>
 	</Item>
-	<Item Name="Class 2.lvclass" Type="LVClass" URL="../../../Class 2.lvclass"/>
+	<Item Name="Class 2345678.lvclass" Type="LVClass" URL="../../../Class 2345678.lvclass"/>
 </Library>

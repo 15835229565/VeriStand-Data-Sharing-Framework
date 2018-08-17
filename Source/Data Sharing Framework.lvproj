@@ -15,6 +15,10 @@
 			<Item Name="Plugins" Type="Folder">
 				<Item Name="Plugin Configuration.UDP.lvclass" Type="LVClass" URL="../Classes/Plugin Model.UDP/Plugin Configuration.UDP.lvclass"/>
 			</Item>
+			<Item Name="Typedefs" Type="Folder">
+				<Item Name="LabVIEW Object Components.ctl" Type="VI" URL="../Tests/LabVIEW Object Components.ctl"/>
+			</Item>
+			<Item Name="Deconstruct LabVIEW Object.vi" Type="VI" URL="../Tests/Deconstruct LabVIEW Object.vi"/>
 			<Item Name="Framework Plugin Configuration Test.vi" Type="VI" URL="../Tests/Framework Plugin Configuration Test.vi"/>
 			<Item Name="Object Array Pointer.vi" Type="VI" URL="../Tests/Object Array Pointer.vi"/>
 			<Item Name="Object Array Replace.vi" Type="VI" URL="../Tests/Object Array Replace.vi"/>
